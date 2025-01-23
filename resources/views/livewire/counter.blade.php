@@ -5,10 +5,9 @@ use function Livewire\Volt\{state};
 state(['count' => 0]);
  
 $increment = fn () => $this->count++;
- 
+$flash = fn() => flash('clicked');
 ?>
  
 <div>
-    <h1>{{ $count }}</h1>
-    <button wire:click="increment">+</button>
+    <button wire:click="flash" class="btn btn-sm btn-success" wire:loading.attr='disabled'>flash</button>
 </div>
