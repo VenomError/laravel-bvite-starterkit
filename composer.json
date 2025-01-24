@@ -10,6 +10,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "andreiio/blade-remix-icon": "^3.6",
+        "blade-ui-kit/blade-icons": "^1.7",
         "laravel/folio": "^1.1",
         "laravel/framework": "^11.31",
         "laravel/prompts": "^0.3.3",

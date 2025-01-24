@@ -9,7 +9,7 @@
 @endsection
 
 @section('title', $title ?? env('APP_NAME' , ''))
-@section('theme', 'ValenciaRed')
+@section('theme', 'CeruleanBlue')
 @section('stroke', 'a')
 @section('layout', 'a')
 

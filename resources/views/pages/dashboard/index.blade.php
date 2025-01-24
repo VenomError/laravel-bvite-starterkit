@@ -7,10 +7,10 @@ render(function (View $view) {
     $breadcrumbs = [
         [
             'route' => 'dashboard.index',
-            'title' => 'dashboard'
-        ]
+            'title' => 'dashboard',
+        ],
     ];
-    return $view->with('breadcrumbs' , $breadcrumbs);
+    return $view->with('breadcrumbs', $breadcrumbs);
 });
 ?>
 <x-app>
@@ -19,4 +19,5 @@ render(function (View $view) {
     <x-slot:breadcrumb>
         <x-breadcrumb :items="$breadcrumbs" />
     </x-slot:breadcrumb>
+
 </x-app>

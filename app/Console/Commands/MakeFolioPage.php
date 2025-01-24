@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-
+use function Laravel\Prompts\text;
 class MakeFolioPage extends Command
 {
     /**
@@ -12,7 +12,7 @@ class MakeFolioPage extends Command
      *
      * @var string
      */
-    protected $signature = 'pages {name} {route_name?}';
+    protected $signature = 'pages {name?} {route_name?}';
 
     /**
      * The console command description.
@@ -46,11 +46,21 @@ class MakeFolioPage extends Command
     public function handle()
     {
         $name = $this->argument('name');
+        if(!$name)
+        {
+            $name = text(
+                'view name or path' ,
+                'input view name',
+                required: true
+            ) ;
+        }
 
         // Gunakan $name sebagai default untuk $routeName jika tidak diberikan
         $routeName = $this->argument('route_name') ?? strtolower($name);
 
         $routeName = str_replace('/', '.', strtolower($name));
+        $name = str_replace('.', '/', strtolower($name));
+
         $stubPath = base_path('stubs/folio-page.stub');
         if (!$this->files->exists($stubPath)) {
             $this->error("Stub file tidak ditemukan di: {$stubPath}");
