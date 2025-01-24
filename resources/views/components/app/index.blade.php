@@ -8,10 +8,17 @@
     <x-app.style />
 @endsection
 
-@section('title', 'Helo World')
+@section('title', $title ?? env('APP_NAME' , ''))
 @section('theme', 'ValenciaRed')
 @section('stroke', 'a')
 @section('layout', 'a')
+
+@section('breadcrumb')
+    {{ $breadcrumb ?? '' }}
+@endsection
+@section('breadcrumb_right')
+    {{ $breadcrumb_right ?? '' }}
+@endsection
 
 @section('content')
     {{ $slot }}

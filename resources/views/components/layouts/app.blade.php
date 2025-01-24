@@ -39,7 +39,14 @@ layout-@yield('layout' , 'default')"
         <x-app.rightbar />
 
         <!-- start: page header area -->
-        <x-app.header.area />
+        <x-app.header.area >
+
+            <x-slot:breadcrumb>
+                @yield('breadcrumb')
+            </x-slot:breadcrumb>
+
+            @yield('breadcrumb_right')
+        </x-app.header.area>
 
         <!-- start: page body area -->
         <div class="ps-md-4 pe-md-3 px-2 py-3 page-body">

@@ -1,10 +1,23 @@
 <?php
-use function Laravel\Folio\name;
+use Illuminate\View\View;
+use function Laravel\Folio\{name, render};
 name('{{ route_name }}');
 
+render(function (View $view) {
+    $breadcrumbs = [
+        [
+            'route' => 'dashboard.index',
+            'title' => 'dashboard'
+        ]
+    ];
+    return $view->with('breadcrumbs' , $breadcrumbs);
+});
 ?>
 <x-app>
-  
+    <x-slot:breadcrumb>
+        <x-breadcrumb :items="$breadcrumbs" />
+    </x-slot:breadcrumb>
+
     //
 
 </x-app>

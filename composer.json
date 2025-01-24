@@ -12,6 +12,7 @@
         "php": "^8.2",
         "laravel/folio": "^1.1",
         "laravel/framework": "^11.31",
+        "laravel/prompts": "^0.3.3",
         "laravel/tinker": "^2.9",
         "livewire/volt": "^1.6",
         "php-flasher/flasher-laravel": "^2.1",

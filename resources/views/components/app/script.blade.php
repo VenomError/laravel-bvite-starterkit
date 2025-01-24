@@ -1,3 +1,3 @@
 <!-- Template page js -->
-<script src="assets/bundles/libscripts.bundle.js"></script>
-<script src="assets/js/main.js"></script>
+<x-script src="assets/bundles/libscripts.bundle.js"></x-script>
+<x-script src="assets/js/main.js"></x-script>
