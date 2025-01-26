@@ -1,11 +1,20 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "venomerror/laravel-11-bvite-starterkit",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
     "keywords": [
         "laravel",
-        "framework"
+        "framework",
+        "VenomError"
+    ],
+    "authors": [
+        {
+            "name": "Wawan Julianto",
+            "email": "studyweb2023@gmail.com",
+            "role": "creator",
+            "homepage": "https://github.com/VenomError"
+        }
     ],
     "license": "MIT",
     "require": {
