@@ -1,3 +1,7 @@
+```
+composer create-project venomerror/laravel-11-bvite-starterkit <filename> --stability=dev
+```
+
 ## Theme Color
     - ValenciaRed
     - SunOrange

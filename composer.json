@@ -1,8 +1,9 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
     "name": "venomerror/laravel-11-bvite-starterkit",
+    "version": "1.0.0-dev",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "laravel 11 admin dashboard starter kit.",
     "keywords": [
         "laravel",
         "framework",
@@ -88,6 +89,6 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
