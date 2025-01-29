@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80904c4138e1c635bcc235508eca8b10",
+    "content-hash": "751faac82f94b36dc9e36567125a302b",
     "packages": [
         {
             "name": "andreiio/blade-remix-icon",
@@ -4099,6 +4099,64 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "saade/blade-iconsax",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saade/blade-iconsax.git",
+                "reference": "900d35ff73db9a9287431c7cb8d7ce79b3efe2c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saade/blade-iconsax/zipball/900d35ff73db9a9287431c7cb8d7ce79b3efe2c7",
+                "reference": "900d35ff73db9a9287431c7cb8d7ce79b3efe2c7",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.1",
+                "illuminate/support": "^9.0|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.0|^10.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Saade\\BladeIconsax\\BladeIconsaxServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Saade\\BladeIconsax\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Saade"
+                }
+            ],
+            "description": "A package to easily make use of Iconsax in your Laravel Blade views.",
+            "homepage": "https://github.com/saade/blade-iconsax",
+            "keywords": [
+                "Iconsax",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/saade/blade-iconsax/issues",
+                "source": "https://github.com/saade/blade-iconsax/tree/v1.2.0"
+            },
+            "time": "2024-03-12T17:46:07+00:00"
         },
         {
             "name": "spatie/laravel-permission",
@@ -8961,7 +9019,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
